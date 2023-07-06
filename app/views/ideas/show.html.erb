@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @idea %>
+
+<div>
+  <%= link_to "編集", edit_idea_path(@idea) %> |
+  <%= link_to "投稿された桜島情報一覧に戻る", ideas_path %>
+
+  <%= button_to "削除", @idea, method: :delete %>
+</div>
